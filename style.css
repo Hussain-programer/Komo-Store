@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2:wght@600&display=swap");
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --text-second-color:#ee1c47;
+  --img-color:#e6e6e6;
+  --golden-star:#fad504f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Baloo Bhai 2", cursive;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: var(--text-color);
+  color: var(--second-bg-color);
+}
+#Head {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+.logo img:hover {
+  max-width: 121px;
+  text-shadow: #2c2c2c;
+}
+.navmenu {
+  display: flex;
+}
+.navmenu a {
+  color:var(--second-bg-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all .5s ease;
+}
+.navmenu a:hover {
+  background: var(--second-bg-color);
+  color: var(--text-color);
+  box-shadow: 0 0 1rem var(--bg-color);
+  border-radius: 20px;
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+.nav-icon i {
+  margin-right: 20px;
+  color:var(--second-bg-color);
+  font-size: 25px;
+  font-weight: 400;
+  transition: all .3s ease;
+}
+.nav-icon i:hover {
+  
+  background: var(--bg-color);
+  color: var(--text-color);
+  /* box-shadow: 0 0 1rem var(--bg-color); */
+  /* border: .5px solid var(--second-bg-color); */
+  border-radius: 50%;
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--bg-color);
+  z-index: 1234567890;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  /* background: var(--second-bg-color); */
+  border: 2px solid var(--bg-color);
+  font-size: 16px;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  transition:all 0.5s ease;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 0 0 1.2rem var(--text-second-color);
+}
+.btn i{
+  vertical-align: middle;
+}
+section{
+  padding: 5% 10%;
+}
+.main-home{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/banner-3.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+.main-text h5{
+  color:var(--text-second-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.main-text h1{
+  color: var(--bg-color);
+  font-size: 65px;
+  text-transform: capitalize;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 6px 0 10px;
+}
+.main-text p{
+  color: #333c56;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.down-arrow{
+  position: absolute;
+  top: 90%;
+  right: 10%;
+}
+.down i{
+  font-size: 30px;
+  color:var(--bg-color);
+  border: 2px solid var(--second-bg-color);
+  transition: all .5s ease;
+  border-radius: 50%;
+  /* padding: 6px 6px; */
+}
+.down i:hover{
+  color: var(--text-color);
+  box-shadow: 0 0 1rem var(--bg-color);
+  background-color: var(--second-bg-color);
+}
+/* header.sticky{ */
+  /* background: var(--text-color); */
+  /* padding: 20px 10%; */
+  /* } */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    margin-bottom: 10px;
+    background: var(--img-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px var(--second-bg-color);
+
+}
+.center-text h2{
+  color: var(--bg-color);
+  font-size: 28px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.center-text span{
+  color: var(--text-second-color);
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 2rem;
+}
+.row{
+  position: relative;
+   transition: all .43s;
+  }
+  .row img{
+    width: 100%;
+    height: auto;
+    transition: all .43s;
+
+}
+.row img:hover{
+  transform: scale(.9);
+  cursor: pointer;
+}
+.product-text{
+  position: absolute;
+  top: 13.5px;
+  left: 13.5px;
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #27b737;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+.heart-icon{
+  position: absolute;
+  right: 0%;
+  font-size: 21px;
+}
+.heart-icon:hover{
+  color: var(--text-second-color);
+  cursor: pointer;
+}
+.ratting i{
+  color: var(--golden-star);
+  font-size: 19px;
+}
+.price h4{
+color: var(--bg-color);
+font-size: 17px;
+text-transform: capitalize;
+font-weight: 400;
+}
+.price p{
+  color: #151515;
+  font-size: 15px;
+  font-weight: 600;
+}
+.client-reviews{
+  background-color: var(--img-color);
+  justify-content: space-between;
+}
+.review{
+  text-align: center;
+}
+.client-reviews h3{
+color: var(--bg-color);
+font-size: 28px;
+text-transform: capitalize;
+font-weight: 700;
+text-align: center;
+}
+.reviews img{
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+  margin: 10px 0;
+  display: inline;
+}
+.review .comment{
+  color: #707070;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  /* margin-bottom: 10px; */
+  margin: 10px;
+}
+.reviews{
+  display: flex;
+  padding: 10px;
+  margin: 14px;
+  justify-content: space-between;
+}
+.review h2{
+  font-size: 22px;
+  color: var(--bg-color);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+}
+.up-center-text h2{
+  color: var(--img-color);
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.update-new{
+  color: var(--text-color) !important;
+background: var(--bg-color);
+}
+.update-cart{
+  display: flex;
+}
+.cart img{
+width: 350px;
+}
+.cart h5{
+  color: var(--img-color);
+  font-size: 15px;
+  margin: 5px;
+  margin-left: 0%;
+}
+.cart h4{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart p{
+  margin: 10px;
+  margin-left: 0%;
+  /* text-align: center; */
+}
+.cart h6{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--img-color);
+}
+.cart h6:hover{
+  color: var(--main-color);
+  cursor: pointer;
+}
